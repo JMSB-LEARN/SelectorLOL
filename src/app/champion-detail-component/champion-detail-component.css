@@ -1,4 +1,47 @@
 :host{
-    width: 70%;
     padding: 0.1em;
+    justify-content: center;
+    width: 80%;
+}
+:host>*{
+    margin-top: 1em;
+    margin:auto;
+}
+.nameNTitle{
+    display: block;
+    align-items: center;
+    width: fit-content;
+    font-size: 3rem;
+    margin: auto;
+}
+.nameNTitle>*{
+    margin: 0.2em;
+    text-align: center;
+}
+.championImage{
+    width: 100%;
+    width: fit-content;
+    margin: auto;
+}
+.championInfo{
+    width: fit-content;
+    display: flex;
+    margin: auto;
+}
+h2{
+    width: fit-content;
+}
+.lore>p{
+    max-width: 50vw;
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 0.5em;
+}
+.skin{
+    margin: 0px;
+    width: fit-content;
+}
+.skins{
+    width: fit-content;
+    margin: auto;
 }

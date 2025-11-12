@@ -1,4 +1,33 @@
 :host{
-    width: 30%;
-    padding: 0.1em ;
+    flex-basis:20%;
+    height: 100vh;
+    justify-content: space-between;
+}
+h1{
+    width: 100%;
+    text-align: center;
+}
+.championList{
+    height: 100%;
+}
+
+.champion-viewport {
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.champion-row {
+    display: flex;
+    gap: 12px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    align-items: center;
+    min-height: 120px; /* should match itemSize in template */
+}
+
+.champion-item {
+    flex: 1 1 50%;
+    min-width: 0;
 }

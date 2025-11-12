@@ -1,7 +1,4 @@
-<app-champion-list-component>
-
+<app-champion-list-component [championList]="championList" (onSelectedChampion)="selectChampion($event)">
 </app-champion-list-component>
-
-<app-champion-detail-component> 
-  
+<app-champion-detail-component [champion]="selectedChampion"> 
 </app-champion-detail-component>

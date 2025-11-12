@@ -1,0 +1,16 @@
+:host {
+    flex-basis: 30%;
+    width: fit-content;
+    justify-content: center;
+    margin: 0.1em;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.2em;
+}

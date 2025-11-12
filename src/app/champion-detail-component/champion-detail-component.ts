@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Champion } from '../models/Champion';
 
 @Component({
   selector: 'app-champion-detail-component',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './champion-detail-component.css',
 })
 export class ChampionDetailComponent {
-
+  @Input() champion!: Champion | undefined;
 }

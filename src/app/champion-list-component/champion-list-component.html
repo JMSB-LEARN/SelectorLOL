@@ -1,1 +1,14 @@
-<p>champion-list-component works!</p>
+<h1>Champions</h1>
+<div class="championList">
+  <cdk-virtual-scroll-viewport itemSize="120" class="champion-viewport">
+    <div *cdkVirtualFor="let row of championRows; let rowIndex = index" class="champion-row">
+      @for (champion of row; track $index) {
+        <app-champion-item-list
+          [champion]="champion"
+          (onSelectChampion)="selectChampion($event)"
+          class="champion-item">
+        </app-champion-item-list>
+      }
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>
