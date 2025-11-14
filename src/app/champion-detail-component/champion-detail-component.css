@@ -3,8 +3,12 @@
     justify-content: center;
     width: 80%;
 }
-:host>*{
+:host>div.championDetailContainer{
+    background-color: rgba(255, 235, 205, 0.075);
+    border: solid 0.3em rgba(255, 235, 205, 0.2);
+    padding: 3em 10em;
     margin-top: 1em;
+    width: fit-content;
     margin:auto;
 }
 .nameNTitle{
@@ -19,29 +23,81 @@
     text-align: center;
 }
 .championImage{
+    width: fit-content;
+    margin: auto;
+    padding: 1em;
+}
+.championImage>img{
     width: 100%;
     width: fit-content;
-    margin: auto;
+    border-radius: 3em;
+    border : solid 0.2em rgba(190, 190, 190, 0.425);  
 }
 .championInfo{
-    width: fit-content;
+    width: max-content;
+    border : solid 0.2em rgba(190, 190, 190, 0.425);   
+    background-color: rgba(54, 54, 54, 0.425);
+    padding: 1em;
     display: flex;
+    justify-content: space-between;
     margin: auto;
 }
+
+.stats{
+    flex-basis: 30%;
+}
+.stats>p{
+    margin: 7% 3%;
+    font-size: 2em;
+}
+
 h2{
     width: fit-content;
 }
 .lore>p{
-    max-width: 50vw;
+    max-width: 45vw;
     text-align: justify;
-    font-size: 1.1em;
+    font-size: 2em;
     margin: 0.5em;
 }
-.skin{
-    margin: 0px;
-    width: fit-content;
-}
 .skins{
-    width: fit-content;
     margin: auto;
+    width: fit-content;
+    margin-top: 2em;  
+    align-content: center;
+    border : solid 0.2em rgba(190, 190, 190, 0.425);   
+    background-color: rgba(54, 54, 54, 0.425);
+    padding: 2em;
+}.skins>h2{
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 0.5em;
+}
+.skin{
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 2em;
+}
+.skin>p{
+    font-size: 3em;
+    text-align: center;
+    margin: 0.2em;
+}
+.skin>img{
+    width: 100%;
+    height: auto;
+    width: fit-content;
+    border-radius: 2em;
+    border : solid 0.2em rgba(190, 190, 190, 0.425);  
+}
+
+
+
+
+.noChampionSelected>p{
+    font-size: 8em;
+    text-align: center;
+    margin-top: 20vh;
 }

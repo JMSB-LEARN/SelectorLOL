@@ -1,35 +1,38 @@
 @if (champion) {
-<div class="nameNTitle">
-    <p>{{champion.name}}</p>
-    <p>{{champion.title}}</p>
-</div>
-<div class="championDetailContainer">
-    <div class="championImage">
-        <img [src]="champion.imgFullUrl" alt="{{champion.name}}" />
+<div>
+    <div class="nameNTitle">
+        <p>{{champion.name}}</p>
+        <p>{{champion.title}}</p>
     </div>
-    <div class="championInfo">
-        <div class="stats">
-            <p>Attack: {{champion.attack}}</p>
-            <p>Defense: {{champion.defense}}</p>
-            <p>Magic: {{champion.magic}}</p>
-            <p>Difficulty: {{champion.difficulty}}</p>
+    <div class="championDetailContainer">
+        <div class="championImage">
+            <img [src]="champion.imgFullUrl" alt="{{champion.name}}" />
         </div>
-        <div class="lore">
-            <p>{{champion.lore}}</p>
+        <div class="championInfo">
+            <div class="stats">
+                <p>Attack: {{champion.attack}}</p>
+                <p>Defense: {{champion.defense}}</p>
+                <p>Magic: {{champion.magic}}</p>
+                <p>Difficulty: {{champion.difficulty}}</p>
+            </div>
+            <div class="lore">
+                <p>{{champion.lore}}</p>
+            </div>
         </div>
-    </div>
-    <div class="skins">
-        <h2>Skins</h2>
-        @for(skin of champion.skins; track $index) {
-        <div class="skin">
-            <p>{{skin.name}}</p>
-            <img [src]="skin.imgUrl" alt="{{skin.name}}" />
+        <div class="skins">
+            <h2>Skins</h2>
+            @for(skin of champion.skins; track $index) {
+            <div class="skin">
+                <p>{{skin.name}}</p>
+                <img [src]="skin.imgUrl" alt="{{skin.name}}" />
+            </div>
+            }
         </div>
-        }
     </div>
 </div>
 }@else {
 <div class="noChampionSelected">
     <p>No hay campeon seleccionado</p>
 </div>
+
 }
