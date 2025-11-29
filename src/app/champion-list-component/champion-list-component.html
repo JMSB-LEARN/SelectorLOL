@@ -1,13 +1,11 @@
 <h1>Champions</h1>
+<input [(ngModel)]="nombreFiltro" placeholder="ATROX?">
 <div class="championList">
   <cdk-virtual-scroll-viewport itemSize="120" class="champion-viewport">
     <div *cdkVirtualFor="let row of championRows; let rowIndex = index" class="champion-row">
       @for (champion of row; track $index) {
-        <app-champion-item-list
-          [champion]="champion"
-          (onSelectChampion)="selectChampion($event)"
-          class="champion-item">
-        </app-champion-item-list>
+      <app-champion-item-list [champion]="champion" class="champion-item">
+      </app-champion-item-list>
       }
     </div>
   </cdk-virtual-scroll-viewport>

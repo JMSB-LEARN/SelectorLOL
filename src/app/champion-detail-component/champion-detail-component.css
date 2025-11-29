@@ -1,41 +1,50 @@
-:host{
+:host {
     padding: 0.1em;
     justify-content: center;
-    width: 80%;
 }
-:host>div.championDetailContainer{
+
+:host>div {
+    margin-bottom: 1em;
+}
+
+div.championDetailContainer {
     background-color: rgba(255, 235, 205, 0.075);
     border: solid 0.3em rgba(255, 235, 205, 0.2);
     padding: 3em 10em;
     margin-top: 1em;
     width: fit-content;
-    margin:auto;
+    margin: auto;
 }
-.nameNTitle{
+
+.nameNTitle {
     display: block;
     align-items: center;
     width: fit-content;
     font-size: 3rem;
     margin: auto;
 }
-.nameNTitle>*{
+
+.nameNTitle>* {
     margin: 0.2em;
     text-align: center;
 }
-.championImage{
+
+.championImage {
     width: fit-content;
     margin: auto;
     padding: 1em;
 }
-.championImage>img{
+
+.championImage>img {
     width: 100%;
     width: fit-content;
     border-radius: 3em;
-    border : solid 0.2em rgba(190, 190, 190, 0.425);  
+    border: solid 0.2em rgba(190, 190, 190, 0.425);
 }
-.championInfo{
+
+.championInfo {
     width: max-content;
-    border : solid 0.2em rgba(190, 190, 190, 0.425);   
+    border: solid 0.2em rgba(190, 190, 190, 0.425);
     background-color: rgba(54, 54, 54, 0.425);
     padding: 1em;
     display: flex;
@@ -43,60 +52,68 @@
     margin: auto;
 }
 
-.stats{
+.stats {
     flex-basis: 30%;
 }
-.stats>p{
+
+.stats>p {
     margin: 7% 3%;
     font-size: 2em;
 }
 
-h2{
+h2 {
     width: fit-content;
 }
-.lore>p{
+
+.lore>p {
     max-width: 45vw;
     text-align: justify;
     font-size: 2em;
     margin: 0.5em;
 }
-.skins{
+
+.skins {
     margin: auto;
     width: fit-content;
-    margin-top: 2em;  
+    margin-top: 2em;
     align-content: center;
-    border : solid 0.2em rgba(190, 190, 190, 0.425);   
+    border: solid 0.2em rgba(190, 190, 190, 0.425);
     background-color: rgba(54, 54, 54, 0.425);
     padding: 2em;
-}.skins>h2{
+}
+
+.skins>h2 {
     font-size: 5em;
     font-weight: bold;
     text-align: center;
     margin: auto;
     padding-bottom: 0.5em;
 }
-.skin{
+
+.skin {
     margin: auto;
     width: fit-content;
     padding-bottom: 2em;
 }
-.skin>p{
+
+.skin>p {
     font-size: 3em;
     text-align: center;
     margin: 0.2em;
 }
-.skin>img{
+
+.skin>img {
     width: 100%;
     height: auto;
     width: fit-content;
     border-radius: 2em;
-    border : solid 0.2em rgba(190, 190, 190, 0.425);  
+    border: solid 0.2em rgba(190, 190, 190, 0.425);
 }
 
 
 
 
-.noChampionSelected>p{
+.noChampionSelected>p {
     font-size: 8em;
     text-align: center;
     margin-top: 20vh;

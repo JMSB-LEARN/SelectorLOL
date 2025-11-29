@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Champion } from '../models/Champion';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-champion-item-list',
@@ -8,13 +9,17 @@ import { Champion } from '../models/Champion';
   styleUrl: './champion-item-list.css',
 })
 export class ChampionItemList {
-  @Input() champion:Champion | undefined;
-  @Output() onSelectChampion = new EventEmitter<Champion>();
+  constructor(private router: Router) { }
+  @Input() champion: Champion | undefined;
 
-  selectChampion() {
-    if (this.champion) {
-      this.onSelectChampion.emit(this.champion);
-    }
+selectChampion() {
+  if (this.champion) {
+    const chamId = this.champion.imgFullUrl
+      .replace("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/", "")
+      .replace("_0.jpg", "");
+    this.router.navigate(['/details', chamId]);
   }
-  
+}
+
+
 }

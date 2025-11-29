@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    position: sticky;
+    bottom: 0px;
+    background-color: gray;
+    padding: 1em;
+}
+
+nav {
+    width: fit-content;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15rem;
+    width: fit-content;
+    text-align: justify;
+    font-size: 2em;
+    margin: 0.5em;
+}

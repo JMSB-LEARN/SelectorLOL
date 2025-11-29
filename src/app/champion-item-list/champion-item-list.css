@@ -3,6 +3,7 @@
     width: fit-content;
     justify-content: center;
     margin: 0.1em;
+    max-width: 20vw;
 }
 img{
     width: 100%;
@@ -12,5 +13,5 @@ p{
     width: 100%;
     text-align: center;
     margin: 0px;
-    font-size: 1.2em;
+    font-size: 5em;
 }
